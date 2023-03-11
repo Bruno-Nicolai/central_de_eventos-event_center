@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Central de Eventos - Event Center</string>
+    <string name="tv_intro">Find Your Events Here</string>
+    <string name="get_started">get started</string>
+    <string name="register_msg">Don\'t have an account? <b>Register</b> now</string>
+    <string name="email">Your Email</string>
+    <string name="pwd">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_day_event">What about today?</string>
+    <string name="about">About Us</string>
+    <string name="github">Link for Github</string>
+    <string name="linkedin">My Linkedin</string>
+</resources>
