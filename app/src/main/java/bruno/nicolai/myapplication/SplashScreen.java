@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
 
+    public static int SPLASH_TIMER = 3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,7 @@ public class SplashScreen extends AppCompatActivity {
             Intent i = new Intent(SplashScreen.this, WelcomeActivity.class);
             startActivity(i);
             finish();
-        }, 2000);
+        }, SPLASH_TIMER);
 
     }
 }

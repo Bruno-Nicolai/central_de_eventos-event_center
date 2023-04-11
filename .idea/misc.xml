@@ -6,12 +6,28 @@
         <entry key="..\:/Projetos/AndroidStudioProjects/Projetos da Faculdade/Event Center/app/src/main/res/layout/activity_login.xml" value="0.45729166666666665" />
         <entry key="..\:/Projetos/AndroidStudioProjects/Projetos da Faculdade/Event Center/app/src/main/res/layout/activity_main.xml" value="0.45729166666666665" />
         <entry key="..\:/Projetos/AndroidStudioProjects/Projetos da Faculdade/Event Center/app/src/main/res/layout/activity_welcome.xml" value="0.45729166666666665" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable-v24/ic_baseline_today_24.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/btn_fill_color.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/btn_transparent.xml" value="0.1535" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/et_bg.xml" value="0.1125" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/header.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/ic_baseline_arrow_left.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/ic_baseline_arrow_right.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/ic_baseline_email.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/login_btn_enter.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/login_btn_next_bg.xml" value="0.1535" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/login_round_corner_top.xml" value="0.1125" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/onboarding_btn_get_started.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/onboarding_btn_skip_bg.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/onboarding_btn_transparent.xml" value="0.1535" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/shape.xml" value="0.1535" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/splash_bg.xml" value="0.1125" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/layout/activity_login.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/drawable/welcome_btn_get_started.xml" value="0.224" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/layout/activity_get_started.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/layout/activity_login.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/layout/activity_main.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/layout/activity_welcome.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/layout/activity_welcome.xml" value="0.21" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/layout/slider_screen.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Event Center/app/src/main/res/layout/splash_screen.xml" value="0.22395833333333334" />
       </map>
     </option>

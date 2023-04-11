@@ -7,36 +7,67 @@
     android:background="@drawable/image_2"
     tools:context=".WelcomeActivity">
 
-    <TextView
-        android:id="@+id/tv_welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="70dp"
-        android:text="@string/tv_intro"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_get_started"
+        android:id="@+id/welcome_btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="40dp"
-        android:backgroundTint="@color/white"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:text="@string/get_started"
-        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_transparent"
+        android:drawableEnd="@drawable/ic_baseline_arrow_right"
+        android:text="@string/next"
+        android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_btn_skip"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/welcome_btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_transparent"
+        android:drawableLeft="@drawable/ic_baseline_arrow_left"
+        android:text="@string/prev"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_btn_skip"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/welcome_btn_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_fill_color"
+        android:drawableEnd="@drawable/ic_baseline_east"
+        android:text="@string/tv_skip"
+        android:textColor="@color/gray_dark"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dotIndicator"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_btn_skip"
         app:layout_constraintEnd_toEndOf="parent"
-        app:strokeColor="@color/gray_dark"
-        app:strokeWidth="2dp" />
+        app:layout_constraintStart_toStartOf="@+id/slideViewPager"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

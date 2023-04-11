@@ -1,14 +1,23 @@
 <resources>
-    <string name="app_name">Central de Eventos - Event Center</string>
+    <string name="app_name">Event Central</string>
     <string name="tv_intro">Find Your Events Here</string>
     <string name="get_started">get started</string>
-    <string name="register_msg">Don\'t have an account? <b>Register</b> now</string>
+    <string name="register_msg">Dont\'t Have An Account? <b>Register</b> now</string>
     <string name="email">Your Email</string>
     <string name="pwd">Password</string>
+    <string name="welcome_title_1">Hello, welcome to our mobile app!</string>
+    <string name="welcome_title_2"> Log in or sign up to access all features.</string>
+    <string name="welcome_title_3">Personalize Your Experience</string>
+    <string name="welcome_title_4">Discover events</string>
+    <string name="welcome_title_5">Create Your Own Event</string>
+    <string name="welcome_desc_1">The app that makes event planning a breeze.</string>
+    <string name="welcome_desc_2">Unlock the full potential of this Event Central.</string>
+    <string name="welcome_desc_3">Improve your feed by purchasing tickets or adding events to your favorites</string>
+    <string name="welcome_desc_4">Tell us your interests to receive recommendations tailored just for you.</string>
+    <string name="welcome_desc_5">If you\'re not interested to go to a specific event, you can plan and organize your event with ease using our powerful tools.</string>
+    <string name="withus">With Us</string>
     <string name="btn_login">Login</string>
-    <string name="menu_home">Home</string>
-    <string name="menu_day_event">What about today?</string>
-    <string name="about">About Us</string>
-    <string name="github">Link for Github</string>
-    <string name="linkedin">My Linkedin</string>
+    <string name="tv_skip">skip</string>
+    <string name="next">next</string>
+    <string name="prev">previous</string>
 </resources>

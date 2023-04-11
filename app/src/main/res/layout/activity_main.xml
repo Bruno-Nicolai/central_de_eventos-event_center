@@ -29,7 +29,6 @@
         android:contentDescription="@null" />
 
     <ImageView
-        android:id="@+id/btn_manage_cash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
