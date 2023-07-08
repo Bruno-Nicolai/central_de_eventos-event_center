@@ -6,8 +6,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Objects;
-
 import bruno.nicolai.myapplication.databinding.ActivityLoginBinding;
 
 

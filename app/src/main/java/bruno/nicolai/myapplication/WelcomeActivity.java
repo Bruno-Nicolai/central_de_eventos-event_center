@@ -1,13 +1,10 @@
 package bruno.nicolai.myapplication;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
@@ -33,7 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
             setDotIndicator(position);
 
-            if(position > 0) {
+            if (position > 0) {
                 binding.welcomeBtnPrev.setVisibility(View.VISIBLE);
             } else {
                 binding.welcomeBtnPrev.setVisibility(View.INVISIBLE);
@@ -60,34 +57,34 @@ public class WelcomeActivity extends AppCompatActivity {
         binding = ActivityWelcomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-            binding.welcomeBtnPrev.setOnClickListener(view -> {
-                if (getItem(0) > 0) {
-                    binding.slideViewPager.setCurrentItem(getItem(-1), true);
-                }
-            });
+        binding.welcomeBtnPrev.setOnClickListener(view -> {
+            if (getItem(0) > 0) {
+                binding.slideViewPager.setCurrentItem(getItem(-1), true);
+            }
+        });
 
-            binding.welcomeBtnNext.setOnClickListener(view -> {
-                if (getItem(0) < 4) {
-                    binding.slideViewPager.setCurrentItem(getItem(1), true);
-                } else {
-                    Intent intent = new Intent(WelcomeActivity.this, GetStartedActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-            });
+        binding.welcomeBtnNext.setOnClickListener(view -> {
+            if (getItem(0) < 4) {
+                binding.slideViewPager.setCurrentItem(getItem(1), true);
+            } else {
+                Intent intent = new Intent(WelcomeActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
-            binding.welcomeBtnSkip.setOnClickListener(view -> {
-                    Intent intent = new Intent(WelcomeActivity.this, GetStartedActivity.class);
-                    startActivity(intent);
-                    finish();
-            });
+        binding.welcomeBtnSkip.setOnClickListener(view -> {
+            Intent intent = new Intent(WelcomeActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        });
 
 
-            ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
-            binding.slideViewPager.setAdapter(viewPagerAdapter);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
+        binding.slideViewPager.setAdapter(viewPagerAdapter);
 
-            setDotIndicator(0);
-            binding.slideViewPager.addOnPageChangeListener(viewPagerListener);
+        setDotIndicator(0);
+        binding.slideViewPager.addOnPageChangeListener(viewPagerListener);
 
     }
 
@@ -96,7 +93,7 @@ public class WelcomeActivity extends AppCompatActivity {
         dots = new TextView[5];
         binding.dotIndicator.removeAllViews();
 
-        for(int i=0; i<dots.length; i++) {
+        for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226", Html.FROM_HTML_MODE_LEGACY));
             dots[i].setTextSize(35);

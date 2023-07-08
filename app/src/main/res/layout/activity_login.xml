@@ -4,34 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".LoginActivity">
 
     <VideoView
         android:id="@+id/vv_header"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintDimensionRatio="1:1"
+        android:layout_centerInParent="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/iv_header"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:background="@drawable/image_3" />
 
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/header_layer"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_header"
+        app:layout_constraintBottom_toBottomOf="@+id/vv_header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,11 +34,11 @@
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_header"
-        app:layout_constraintEnd_toEndOf="@+id/iv_header"
+        app:layout_constraintBottom_toBottomOf="@+id/vv_header"
+        app:layout_constraintEnd_toEndOf="@+id/vv_header"
         app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="@+id/iv_header"
-        app:layout_constraintTop_toTopOf="@+id/iv_header"
+        app:layout_constraintStart_toStartOf="@+id/vv_header"
+        app:layout_constraintTop_toTopOf="@+id/vv_header"
         app:layout_constraintVertical_bias="0.7" />
 
     <TextView
@@ -71,7 +60,7 @@
         android:layout_width="1dp"
         android:layout_height="1dp"
         android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_header"
+        app:layout_constraintBottom_toBottomOf="@+id/vv_header"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -88,7 +77,6 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="30dp"
-            android:autofillHints="@null"
             android:background="@drawable/et_bg"
             android:drawableEnd="@drawable/ic_round_text_fields_24"
             android:drawableTint="@color/txt_hint"
@@ -96,20 +84,22 @@
             android:hint="@string/email"
             android:imeOptions="actionNext"
             android:inputType="textEmailAddress"
+            android:maxLength="30"
             android:paddingStart="20dp"
             android:paddingTop="15dp"
-            android:paddingEnd="20dp"
+            android:paddingEnd="12dp"
             android:paddingBottom="15dp"
             android:textColor="@color/txt"
             android:textColorHint="@color/txt_hint"
+            android:textCursorDrawable="@null"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        <!--            app:hintEnabled="false"-->
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/login_et_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -117,30 +107,41 @@
             android:layout_marginEnd="30dp"
             android:textColor="@color/txt"
             android:textColorHint="@color/txt_hint"
+            app:counterEnabled="true"
+            app:counterMaxLength="19"
+            app:counterOverflowTextColor="@color/red_600"
+            app:counterTextColor="@color/white"
+            app:endIconDrawable="@drawable/show_pwd_selector"
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false"
+            app:hintTextColor="@color/txt_hint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/login_et_email"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/txt_hint">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints="@null"
                 android:background="@drawable/et_bg"
-                android:drawableEnd="@drawable/ic_baseline_remove_eye"
                 android:gravity="start"
                 android:hint="@string/pwd"
                 android:imeOptions="actionNext"
                 android:inputType="textPassword"
+                android:maxLength="20"
                 android:paddingStart="20dp"
                 android:paddingTop="15dp"
                 android:paddingEnd="20dp"
                 android:paddingBottom="15dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="false"
                 android:textColor="@color/txt"
+                android:textColorHighlight="@color/green_600"
+                android:textColorHint="@color/txt_hint"
+                android:textColorSecondary="@color/txt"
+                android:textCursorDrawable="@null"
                 android:textSize="16sp" />
-            <!--            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--            app:layout_constraintStart_toStartOf="parent"-->
-            <!--            app:layout_constraintTop_toBottomOf="@id/login_et_email" />-->
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -164,17 +165,17 @@
             android:id="@+id/tv_invite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:text="@string/register_msg"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_btn_next" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
